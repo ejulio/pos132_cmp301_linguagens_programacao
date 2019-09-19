@@ -70,9 +70,23 @@ Entretanto, se quiser listar todos os pacotes instalados no formato do `requirem
 
 > Os pacotes são obtidos do [`pypi`](https://pypi.org/), mas existem outros repositórios como o [`conda-forge`](https://conda-forge.org/)
 
-# 2 Gráficos
+# 2 Gráficos (diretório `graficos`)
 
-TBD
+Dataset https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
+
+Para iniciar:
+* Mude para o diretório `graficos`
+* Crie e ative um ambiente virtual para esse exemplo
+* Instale as dependencias `pip install -r requirements.txt`
+
+Execue `python main.py`.
+Note que é necessário informar dois parâmetros `--grafico` e `arquivo-saida`.
+Informe o gráfico desejado em `--grafico` e qualquer caminho válido no seu sistema em `--arquivo-saida`.
+
+Esse programa demonstra, principalmente, o uso da biblioteca `matplotlib` para criar gráficos.
+Porém, também vemos a biblioteca `pandas` para manipulação de dados tabulares.
+`requests` para fazer requisições _http_.
+Sem contar algumas estruturas da linguagem `python` e a sua bibliteca padrão (_standard library_).
 
 # 3 Estatísticas
 
