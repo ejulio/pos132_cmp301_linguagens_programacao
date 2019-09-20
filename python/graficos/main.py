@@ -91,7 +91,7 @@ def linha(df, ax):
     # ax.set_yscale('log')
     ax.set_title('Consumo de Voltage médio (log) por dia do mês')
     ax.set_ylabel('Voltage (log)')
-    ax.set_xlabel('Dai do mês')
+    ax.set_xlabel('Dia do mês')
     ax.tick_params(axis='x', rotation=90)
 
 
