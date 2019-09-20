@@ -88,13 +88,24 @@ Porém, também vemos a biblioteca `pandas` para manipulação de dados tabulare
 `requests` para fazer requisições _http_.
 Sem contar algumas estruturas da linguagem `python` e a sua bibliteca padrão (_standard library_).
 
-# 3 Estatísticas
+# 3 Estatísticas (diretório `estatisticas`)
 
-TBD
+Dataset https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
+
+Para iniciar:
+* Mude para o diretório `estatisticas`
+* Crie e ative um ambiente virtual para esse exemplo
+* Instale as dependencias `pip install -r requirements.txt`
+
+Execue `python main.py`.
+Informe uma das colunas do _dataset_.
+Veja as estatísticas.
+
+Esse programa demonstra um pouco mais da biblioteca `pandas` e das funcionalidades disponíveis para trabalhar com estatística.
 
 # 4 Detecção de anomalias (Exercício)
 
-https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
+Dataset https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 
 # 5 Processamento de imagens
 
