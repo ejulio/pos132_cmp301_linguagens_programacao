@@ -107,6 +107,39 @@ Esse programa demonstra um pouco mais da biblioteca `pandas` e das funcionalidad
 
 Dataset https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 
+O _dataset_ dos exemplos anteriores também será utilizado nesse exercício.
+A ideia é detectar se houve alguma anomalia no consumo de `Voltage` no ano de 2010.
+Portanto, é necessário carregar a base e separar em dois conjuntos.
+O primeiro contém todas as observações até 2009 e o segundo contém apenas as de 2010.
+Assim, como na vida real, o modelo será construído com base nas informações até um ponto (supondo que elas existam apenas até 2009) e serão testados no futuro (supondo que 2010 está acontecendo).
+Nesse exercício a ideia de uma anomalia parte de um ponto fora de uma distribuição normal (Gaussiana).
+Para simplificar o exercício, os dados na coluna `Voltage` já seguem essa distribuição.
+
+Uma anomalia é definida como um valor distante da média acima de dois desvios padrões.
+Em termos matemáticos `|x - mu| > 2 * std`, sendo:
+* `x` o valor observado (qualquer linha no ano de 2010, nesse exemplo)
+* `mu` a média dos valores de 2006 à 2009
+* `||` operação de valor absoluto (pega sempre o valor positivo)
+* `std` o desvio padrão dos valores de 2006 à 2009
+
+Após verificar quais observações são anomalias e quais não são, persista o resultado em um arquivo `csv`.
+A primeira coluna desse arquivo deve conter o índice (linha) da observação no _dataset_ e a segunda coluna deve conter o valor `0 se não for uma anomalia` e `1 se for uma anomalia`.
+
+**Opcional 1**: Compute as estimativas para cada ano. Por exemplo, use 2006 como base e detecte anomalias em 2007. Depois use 2006 e 2007 como base e detecte anomalias em 2008. Assim por diante até usar os anos de 2006 até 2009 como base e detectar as anomalias em 2010.
+
+**Opcional 2**: Como seria uma alteração no programa para receber dois parâmetros da linha de comando: `--anos-anteriores 2006,2007` e `--anos-deteccao 2008` para calcular a estatística com os anos de 2006 e 2007, e prever para o ano de 2008.
+
+A solução proposta para esse exercício está no diretório `deteccao_anomalia`.
+Antes de verificar a solução, tente resolver o problema.
+Se tiver alguma dúvida, pergunte ou procure na internet antes de verificar a solução.
+Ao final, compare a solução proposta com a sua.
+
+Lembre-se de criar o ambiente virtual para o exercício e instalar as bibliotecas necessárias.
+
+Algumas referências:
+* https://pt.wikipedia.org/wiki/Detec%C3%A7%C3%A3o_de_anomalias
+* https://blog.dp6.com.br/t%C3%A9cnicas-de-detec%C3%A7%C3%A3o-de-anomalias-3d9e216bf82e
+
 # 5 Processamento de imagens
 
 TBD
