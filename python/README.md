@@ -79,7 +79,7 @@ Para iniciar:
 * Crie e ative um ambiente virtual para esse exemplo
 * Instale as dependencias `pip install -r requirements.txt`
 
-Execue `python main.py`.
+Execute `python main.py`.
 Note que é necessário informar dois parâmetros `--grafico` e `arquivo-saida`.
 Informe o gráfico desejado em `--grafico` e qualquer caminho válido no seu sistema em `--arquivo-saida`.
 
@@ -119,7 +119,7 @@ Uma anomalia é definida como um valor distante da média acima de dois desvios 
 Em termos matemáticos `|x - mu| > 2 * std`, sendo:
 * `x` o valor observado (qualquer linha no ano de 2010, nesse exemplo)
 * `mu` a média dos valores de 2006 à 2009
-* `||` operação de valor absoluto (pega sempre o valor positivo)
+* `|.|` operação de valor absoluto (pega sempre o valor positivo)
 * `std` o desvio padrão dos valores de 2006 à 2009
 
 Após verificar quais observações são anomalias e quais não são, persista o resultado em um arquivo `csv`.
@@ -140,9 +140,27 @@ Algumas referências:
 * https://pt.wikipedia.org/wiki/Detec%C3%A7%C3%A3o_de_anomalias
 * https://blog.dp6.com.br/t%C3%A9cnicas-de-detec%C3%A7%C3%A3o-de-anomalias-3d9e216bf82e
 
-# 5 Processamento de imagens
+# 5 Processamento de imagens (diretório `processamento_imagens`)
 
-TBD
+Nenhum _dataset_ será usado aqui, apenas imagens já disponíveis na biblioteca `scikit-image` para exemplos.
+
+Para iniciar:
+* Mude para o diretório `graficos`
+* Crie e ative um ambiente virtual para esse exemplo
+* Instale as dependencias `pip install -r requirements.txt`
+* Execute `python processamento_images.py` com o exemplo desejado
+
+Este programa demonstra o uso da biblioteca `scikit-image` para trabalhar com imagens no `python`.
+As imagens são `numpy` arrays e por isso podem ser carregadas e reutilizadas em várias bibliotecas, facilitando a integração.
+Note que existem outras bibliotecas para processamento de imagens no `python`, como: `Open CV`, `mahotas`, `PIL` e `Pillow`.
+
+Algumas funções extras para conferir:
+
+* `resize`, `rescale`, `rotate`: https://scikit-image.org/docs/stable/api/skimage.transform.html
+* `Otsu's threshold`, `Gaussian Blur`: https://scikit-image.org/docs/stable/api/skimage.filters.html
+* Desenho: https://scikit-image.org/docs/stable/api/skimage.draw.html
+
+Para mais exemplos sobre processamento de imagens com `python`, veja https://github.com/ejulio/talks/blob/master/processamento-imagens-python/Processamento%20de%20imagens%20com%20python.ipynb
 
 # 6 Classificação de spam
 
