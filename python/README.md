@@ -145,7 +145,7 @@ Algumas referências:
 Nenhum _dataset_ será usado aqui, apenas imagens já disponíveis na biblioteca `scikit-image` para exemplos.
 
 Para iniciar:
-* Mude para o diretório `graficos`
+* Mude para o diretório `processamento_imagens`
 * Crie e ative um ambiente virtual para esse exemplo
 * Instale as dependencias `pip install -r requirements.txt`
 * Execute `python processamento_images.py` com o exemplo desejado
@@ -166,9 +166,34 @@ Para mais exemplos sobre processamento de imagens com `python`, veja https://git
 
 TBD
 
-# 7 Regressão linear
+# 7 Regressão linear (diretório `regressao_linear`)
 
-TDB
+Dataset https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes
+
+Assim como o `scikit-image` contém imagens na biblioteca para testes, o `scikit-learn` possui alguns _datasets_ para testes.
+
+Para iniciar:
+* Mude para o diretório `regressao_linear`
+* Crie e ative um ambiente virtual para esse exemplo
+* Instale as dependencias `pip install -r requirements.txt`
+* Execute `python regressao.py`
+
+Esse programa demonstra o uso da biblioteca `scikit-learn` para otimizar um modelo de Regressão Linear.
+Esse é um modelo simples de _machine learning_, mas já o suficiente para mostrar como a biblioteca funciona e pode ser utilizada.
+Existem muitos algoritmos disponíveis nessa biblioteca (SVM, Rede Neural, Bayes, K-Means, outros) que variam entre aprendizado supervisionado e não-supervisionado.
+De forma geral, ela é um bom ponto de partida para essas atividades.
+Sem contar que funciona muito bem com `numpy` arrays e `pd.DataFrame` ajudando a trabalhar com outras bibliotecas e facilitando a compatibilidade.
+Além dos algoritmos/modelos de _machine learning_ a biblioteca também porvê funções para normalizar dados e ajudar nos experimentos.
+Ao explorar a biblioteca (https://scikit-learn.org/stable/modules/classes.html) é possível ver que as possibilidades são inúmeras.
+Um detalhe importante é que todos os algoritmos seguem a mesma interface/API, ou seja, para treinar é apenas necessário executar `fit(X, y)` e para obter os resultados `predict(X)`.
+Se precisar de uma métrica de avaliação, pode usar `score(X, y)`.
+Além de todos os detalhes já mencionadas, também existe um módulo exclusivo para métricas dentro do `scikit-learn`, o [`metrics`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics).
+
+Algumas referências:
+* Kaggle Courses https://www.kaggle.com/learn/overview
+    * Aconselho ver [esse material](https://www.kaggle.com/learn/machine-learning-explainability) após as aulas de Aprendizado Supervisionado 
+* Utilidades: https://rasbt.github.io/mlxtend/, https://www.scikit-yb.org/en/latest/
+* Interpretação: https://eli5.readthedocs.io/en/latest/
 
 # 8  K-Nearest Neighbor (Exercício)
 
