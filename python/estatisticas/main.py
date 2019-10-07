@@ -11,6 +11,8 @@ if __name__ == '__main__':
     df = dataset.df
     mensagem = f'Informe uma coluna ({", ".join(df.columns)}): '
     coluna = input(mensagem).strip()
+    # Qual é a alteração para ler o nome de uma coluna em loop
+    # até que uma linha em branco (ou um nome especial) seja informado?
 
     # Ao acessar df[coluna] temos um pandas.Series
     # Documentação de pandas.Series
