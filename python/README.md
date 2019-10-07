@@ -162,11 +162,7 @@ Algumas funções extras para conferir:
 
 Para mais exemplos sobre processamento de imagens com `python`, veja https://github.com/ejulio/talks/blob/master/processamento-imagens-python/Processamento%20de%20imagens%20com%20python.ipynb
 
-# 6 Classificação de spam
-
-TBD
-
-# 7 Regressão linear (diretório `regressao_linear`)
+# 6 Regressão linear (diretório `regressao_linear`)
 
 Dataset https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes
 
@@ -195,6 +191,30 @@ Algumas referências:
 * Utilidades: https://rasbt.github.io/mlxtend/, https://www.scikit-yb.org/en/latest/
 * Interpretação: https://eli5.readthedocs.io/en/latest/
 
-# 8  K-Nearest Neighbor (Exercício)
+# 7  K-Nearest Neighbor (Exercício)
 
-https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+Dataset: Iris (incluso no `scikit-learn`)
+
+A ideia desse exercício é implementar um algoritmo simples de _machine learning_ conhecido como
+_K-Nearest Neighbors_ (KNN).
+Este algoritmo é baseado na ideia que amostras similares estão próximas (curta distância) em um determinado espaço.
+Portanto, a ideia do algoritmo é calcular a distância de uma amostra `x` contra todas as amostras que existem na base.
+A partir dessas distâncias calculadas, as `k` menores distâncias são selecionadas.
+Com base nas `k` menores distância, conta-se qual a classe/_label_ mais frequente e este é usado como label para a classe.
+O cálculo de distância mais comum, é a distância Euclidiana, dada por `c = sqrt((p1 - p2 ^ 2))`, sendo:
+* `sqrt` a raiz quadrada
+* `p1 - p2` a subtração de dois vetores, portanto deve ser feita a subtração item a item do vetor
+* `^ 2` valor ao quadrado
+
+Note que, como o interesse é apenas em qual amostra está mais próxima, e não a real distância entre os pontos, a operação de raiz quadrada pode ser descartada.
+
+Algumas outras dicas:
+* Carregue o _dataset_ com [`load_iris`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris)
+* Separe um conjunto para treino e outro para teste
+* Comece com `k=5`, mas depois pense nesse valor como um parâmetro que pode ser alterado
+* Calcule a acurácia com [`accuracy_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score)
+
+Como no exercício anterior, uma solução proposta para este exemplo está disponível no diretório `knn`.
+A ideia é tentar resolver problema e só verificar a solução proposta ao final, ou se ficar paralisado em alguma dúvida.
+Ao fim, compare a sua solução com a proposta.
+Lembre-se que essa solução é apenas proposta e não existe uma melhor solução, o objetivo é ter a comparação para aprendizado.
