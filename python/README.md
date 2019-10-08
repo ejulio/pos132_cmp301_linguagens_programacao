@@ -6,7 +6,7 @@ O `python` pode ser baixado [aqui](https://www.python.org/downloads/).
 Em ambientes _Linux_, é possível instalar pelo gerenciador de pacotes.
 No _Ubuntu_, `sudo apt-get install python3`.
 Junto com o `python`, precisamos de um gerenciador de pacotes.
-O mais comum, é o `pip`, mas existem outros, como o [`anaconda`](https://www.anaconda.com/distribution/).
+O mais comum é o `pip`, mas existem outros, como o [`anaconda`](https://www.anaconda.com/distribution/).
 No _Windows_, o `pip` já deve vir junto com a instalação do `python`.
 No _Linux_, pode ser necessário instalar separadamente.
 No _Ubuntu_, `sudo apt-get install python3-pip`.
@@ -28,7 +28,7 @@ Ou seja, o mesmo pacote é compartilhado entre várias aplicações.
 Isso pode ser um problema em alguns casos.
 Imagine que a _Aplicação A_ precisa da biblioteca `numpy 1.17.0` enquanto a _Aplicação B_ precisa do `numpy 1.10.0`.
 Nesse caso, é provável que uma das aplicações não funcione como esperado.
-Outro ponto importante é que o sistema operacional pode usar o `python` e determinadas biblitecas para a sua operação.
+Outro ponto importante é que o sistema operacional pode usar o `python` e determinadas bibliotecas para a sua operação.
 Assim, ao instalar ou atualizar uma biblioteca, quebramos o funcionamento do sistema operacional.
 Para evitar esses problemas, precisamos de _ambientes virtuais_.
 
@@ -77,7 +77,7 @@ Dataset https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+po
 Para iniciar:
 * Mude para o diretório `graficos`
 * Crie e ative um ambiente virtual para esse exemplo
-* Instale as dependencias `pip install -r requirements.txt`
+* Instale as dependências `pip install -r requirements.txt`
 
 Execute `python main.py`.
 Note que é necessário informar dois parâmetros `--grafico` e `arquivo-saida`.
@@ -86,7 +86,7 @@ Informe o gráfico desejado em `--grafico` e qualquer caminho válido no seu sis
 Esse programa demonstra, principalmente, o uso da biblioteca `matplotlib` para criar gráficos.
 Porém, também vemos a biblioteca `pandas` para manipulação de dados tabulares.
 `requests` para fazer requisições _http_.
-Sem contar algumas estruturas da linguagem `python` e a sua bibliteca padrão (_standard library_).
+Sem contar algumas estruturas da linguagem `python` e a sua biblioteca padrão (_standard library_).
 
 # 3 Estatísticas (diretório `estatisticas`)
 
@@ -97,7 +97,7 @@ Para iniciar:
 * Crie e ative um ambiente virtual para esse exemplo
 * Instale as dependencias `pip install -r requirements.txt`
 
-Execue `python main.py`.
+Execute `python main.py`.
 Informe uma das colunas do _dataset_.
 Veja as estatísticas.
 
@@ -147,7 +147,7 @@ Nenhum _dataset_ será usado aqui, apenas imagens já disponíveis na biblioteca
 Para iniciar:
 * Mude para o diretório `processamento_imagens`
 * Crie e ative um ambiente virtual para esse exemplo
-* Instale as dependencias `pip install -r requirements.txt`
+* Instale as dependências `pip install -r requirements.txt`
 * Execute `python processamento_images.py` com o exemplo desejado
 
 Este programa demonstra o uso da biblioteca `scikit-image` para trabalhar com imagens no `python`.
@@ -179,11 +179,11 @@ Esse é um modelo simples de _machine learning_, mas já o suficiente para mostr
 Existem muitos algoritmos disponíveis nessa biblioteca (SVM, Rede Neural, Bayes, K-Means, outros) que variam entre aprendizado supervisionado e não-supervisionado.
 De forma geral, ela é um bom ponto de partida para essas atividades.
 Sem contar que funciona muito bem com `numpy` arrays e `pd.DataFrame` ajudando a trabalhar com outras bibliotecas e facilitando a compatibilidade.
-Além dos algoritmos/modelos de _machine learning_ a biblioteca também porvê funções para normalizar dados e ajudar nos experimentos.
+Além dos algoritmos/modelos de _machine learning_ a biblioteca também provê funções para normalizar dados e ajudar nos experimentos.
 Ao explorar a biblioteca (https://scikit-learn.org/stable/modules/classes.html) é possível ver que as possibilidades são inúmeras.
 Um detalhe importante é que todos os algoritmos seguem a mesma interface/API, ou seja, para treinar é apenas necessário executar `fit(X, y)` e para obter os resultados `predict(X)`.
 Se precisar de uma métrica de avaliação, pode usar `score(X, y)`.
-Além de todos os detalhes já mencionadas, também existe um módulo exclusivo para métricas dentro do `scikit-learn`, o [`metrics`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics).
+Além de todos os detalhes já mencionados, também existe um módulo exclusivo para métricas dentro do `scikit-learn`, o [`metrics`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics).
 
 Algumas referências:
 * Kaggle Courses https://www.kaggle.com/learn/overview
