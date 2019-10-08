@@ -3,7 +3,7 @@
 ## Instalação
 
 O `python` pode ser baixado [aqui](https://www.python.org/downloads/).
-Em abientes _Linux_, é possível instalar pelo gerenciador de pacotes.
+Em ambientes _Linux_, é possível instalar pelo gerenciador de pacotes.
 No _Ubuntu_, `sudo apt-get install python3`.
 Junto com o `python`, precisamos de um gerenciador de pacotes.
 O mais comum, é o `pip`, mas existem outros, como o [`anaconda`](https://www.anaconda.com/distribution/).
