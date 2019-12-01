@@ -12,4 +12,5 @@ Existe ainda um diterório `aula` dentro de `python` que contém o material most
 
 # R
 
-Será adicionado para a próxima aula.
+O diretório `R` contém o material sobre a linguagem `R`.
+Existe ainda um diterório `aula` dentro de `R` que contém o material mostrado na aula.
