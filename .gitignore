@@ -114,3 +114,8 @@ venv.bak/
 *.png
 data/
 .Rproj.user
+.Rhistory
+.Rprofile
+packrat/
+household_power_consumption.zip
+household_power_consumption.txt
